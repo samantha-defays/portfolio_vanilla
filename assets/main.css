@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:wght@100;200&family=Oxygen&display=swap');
+
+/**--------------------------------------------------
+
+| ___ \  ___/  ___|  ___|_   _| /  __ \/  ___/  ___|
+| |_/ / |__ \ `--.| |__   | |   | /  \/\ `--.\ `--. 
+|    /|  __| `--. \  __|  | |   | |     `--. \`--. \
+| |\ \| |___/\__/ / |___  | |   | \__/\/\__/ /\__/ /
+\_| \_\____/\____/\____/  \_/    \____/\____/\____/ 
+
+--------------------------------------------------**/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**--------------------------------------------------
+_____  _     ___________  ___   _     
+|  __ \| |   |  _  | ___ \/ _ \ | |    
+| |  \/| |   | | | | |_/ / /_\ \| |    
+| | __ | |   | | | | ___ \  _  || |    
+| |_\ \| |___\ \_/ / |_/ / | | || |____
+ \____/\_____/\___/\____/\_| |_/\_____/
+
+--------------------------------------------------**/
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+main, footer {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	font-family: 'Oxygen', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+main {
+	flex-grow: 1;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2.1rem;
+}
+h3 {
+	font-size: 1.8rem;
+}
+h4 {
+	font-size: 1.4rem;
+}
+h5 {
+	font-size: 1.1rem;
+}
+header, h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+section {
+	margin: 2% 0;
+}
+section h1 {
+	border-bottom: 2px solid pink;
+	padding: 5px 0;
+	margin-bottom: 1%;
+}
+
+/**--------------------------------------------------
+
+| | | ||  ___|/ _ \|  _  \  ___| ___ \
+| |_| || |__ / /_\ \ | | | |__ | |_/ /
+|  _  ||  __||  _  | | | |  __||    / 
+| | | || |___| | | | |/ /| |___| |\ \ 
+\_| |_/\____/\_| |_/___/ \____/\_| \_|
+
+--------------------------------------------------**/
+header {
+	background-image: url("../assets/img/pexels-ylanite-koppens-776653.jpg");
+	background-size: cover;
+	background-position: bottom;
+	width: 100vw;
+}
+
+header article h1 {
+	color: white;
+	font-size: 10rem;
+	font-family: 'Monsieur La Doulaise', cursive;
+}
+
+header article h2 {
+	color: peachpuff;
+	margin-top: -1%;
+	font-size: 3rem;
+}
+
+header nav {
+	margin: 3% 0;
+	display: flex;
+	justify-content: center;
+}
+
+header nav a {
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	margin: 0 2%;
+	color: peachpuff;
+}
+
+header nav i {
+	font-size: 3rem;
+}
+
+header article {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/**--------------------------------------------------
+___  ___  ___  _____ _   _ 
+|  \/  | / _ \|_   _| \ | |
+| .  . |/ /_\ \ | | |  \| |
+| |\/| ||  _  | | | | . ` |
+| |  | || | | |_| |_| |\  |
+\_|  |_/\_| |_/\___/\_| \_|
+
+--------------------------------------------------**/
+main {
+	padding: 3% 1%;
+}
+#competences, #formations {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#competences h1, #formations h1 {
+	width: 100%;
+}
+
+#compenteces article, #formations article {
+	width: 33%;
+}
+
+#formations article {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.side  {
+	width: 20%;
+}
+
+.content {
+	width: 80%;
+}
+
+contact h1 {
+	width: 100%;
+}
+
+#contact a {
+	display: inline-block;
+}
+
+/**--------------------------------------------------
+
+______ _____  _____ _____ ___________ 
+|  ___|  _  ||  _  |_   _|  ___| ___ \
+| |_  | | | || | | | | | | |__ | |_/ /
+|  _| | | | || | | | | | |  __||    / 
+| |   \ \_/ /\ \_/ / | | | |___| |\ \ 
+\_|    \___/  \___/  \_/ \____/\_| \_|
+
+--------------------------------------------------**/
