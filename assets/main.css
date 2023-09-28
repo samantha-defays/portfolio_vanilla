@@ -79,6 +79,11 @@ html {
 main, footer {
 	max-width: 1200px;
 	margin: 0 auto;
+	background-color: #ffffff;
+	background-color: #ffffff;
+	opacity: 0.8;
+	background-image: linear-gradient(0deg, #ffffff 50%, #fffdfb 50%);
+	background-size: 10px 10px;
 }
 body {
 	min-height: 100vh;
@@ -87,6 +92,7 @@ body {
 	font-size: 1.6rem;
 	font-family: 'Oxygen', sans-serif;
 	font-family: 'Montserrat', sans-serif;
+
 }
 main {
 	flex-grow: 1;
@@ -137,18 +143,6 @@ header {
 	width: 100vw;
 }
 
-header article h1 {
-	color: white;
-	font-size: 10rem;
-	font-family: 'Monsieur La Doulaise', cursive;
-}
-
-header article h2 {
-	color: peachpuff;
-	margin-top: -1%;
-	font-size: 3rem;
-}
-
 header nav {
 	margin: 3% 0;
 	display: flex;
@@ -172,6 +166,11 @@ header article {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+header article img {
+	width: 80%;
+	margin: 0 auto;
 }
 
 /**--------------------------------------------------
