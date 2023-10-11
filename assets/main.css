@@ -218,6 +218,11 @@ header article {
 	justify-content: center;
 }
 
+header img {
+	width: 90%;
+	margin: 0 auto;
+}
+
 /**--------------------------------------------------
 ___  ___  ___  _____ _   _ 
 |  \/  | / _ \|_   _| \ | |
@@ -272,6 +277,21 @@ section img {
 	background-color: rgba(94, 76, 112, 0.9);
 	padding: 3%;
 	margin-bottom: 2%;
+}
+
+#experiences .detail p, #experiences .detail ul {
+	margin-bottom: 10px;
+}
+
+#experiences ul li {
+	list-style: disc;
+	margin-left: 40px;
+}
+
+#experiences .detail img {
+	display: inline-block;
+	width: 70px;
+	vertical-align: middle;
 }
 
 /** Formations **/
@@ -342,17 +362,51 @@ section img {
 	font-size: 5rem;
 }
 
+/* RESPONSIVE */
+@media (max-width: 1350px) {
+	header img {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 1023px) {
+	header img {
+		width: 70%;
+		margin: 0 auto;
+	}
 
+	main {
+		max-width: 700px;
+	}
 
+	#experiences article {
+		margin-bottom: 50px;
+	}
 
-/**--------------------------------------------------
+	#formations article {
+		width: 100%;
+		margin-bottom: 50px;
+	}
 
-______ _____  _____ _____ ___________ 
-|  ___|  _  ||  _  |_   _|  ___| ___ \
-| |_  | | | || | | | | | | |__ | |_/ /
-|  _| | | | || | | | | | |  __||    / 
-| |   \ \_/ /\ \_/ / | | | |___| |\ \ 
-\_|    \___/  \___/  \_/ \____/\_| \_|
+	#competences article {
+		width: 50%;
+	}
+}
 
---------------------------------------------------**/
+@media (max-width: 750px) {
+	main {
+		padding: 0 3%;
+	}
+
+		#experiences .detail p, #experiences .detail ul {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 750px) {
+		#competences article {
+		width: 100%;
+	}
+}
+
 
