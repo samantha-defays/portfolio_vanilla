@@ -274,7 +274,8 @@ section img {
 
 #experiences .title {
 	color: white;
-	background-color: rgba(94, 76, 112, 0.9);
+	background-color: rgba(94, 76, 112, 0.5);
+	backdrop-filter: blur(8px);
 	padding: 3%;
 	margin-bottom: 2%;
 }
